@@ -2,7 +2,7 @@
 def myfunc(*args): #using arguments same as in previous chapters
     arg1 , arg2 = args  # passing arguments
     print "first: {} second:{}" .format(arg1 , arg2)  #simple string.
-myfunc("hello" , 2040) # now callling function for giving this arguments.
+myfunc("hello" , "joker") # now callling function for giving this arguments.
 #rewriting a new function
 def sec(*args):
     one , two = args
@@ -18,3 +18,5 @@ print_alpha('trigo' ,'values')
 def sing(lol):  #makiing a functin , and assingg it a variable
     print 'what is past tense of sing is >> %s'  % lol #prit command
 sing('sang') # callig the function
+#tip for me.
+#for implementing any thing in a function we put it inside the indented region.

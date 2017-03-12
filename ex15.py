@@ -1,9 +1,19 @@
-print "####################################"
 # including write,read utility to file
-print "# v.3 file_system utility          # "
-print "####################################"
-print "read  my source code using it easily"
+#
+#Version v.3
+#
+# Copyright 2017 venkatesh bellale .All Rights Reserved
+#
+#Licensed under open source.can be used for ANY purpose
+print
+"""
+####################################
+  file_system utility
+####################################
+"""
+print "READ  MY SOURCE CODE USING THIS VERY EASILY"
 #from sys import argv
+
 #script , filename = argv
 print """
 -----------------------------------------
@@ -30,10 +40,13 @@ print """
 17)zork.py\n
 """
 filename = raw_input(
-    "type filename you want to read,use ex15.txt for now>>")  # getting filename for reading
+    "TYPE THE  FILENAME YOU WANT TO READ>>")  # getting filename for reading
+first_read = open(filename , "a+")
+print first_read.read()
+print "this file %s opened" % filename  # simple sting in pyhton
+print "\n"
 # opening the file,assigning the variable a function
 todo = open(filename, 'a+')
-print "we are going to read this file %s" % filename  # simple sting in pyhton
 do = raw_input("write here to write in the file>>")  # v1.2
 todo.write(do)
 raw_input("want to read that file,if yes press enter dont want to read ctrl+c")
@@ -41,3 +54,5 @@ todo.close()
 # reopening file for reading
 todo = open(filename)
 print todo.read()
+todo.close()
+first_read.close()
